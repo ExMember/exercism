@@ -11,6 +11,9 @@
 		6D2F9EEB1B430E6300B90B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EE91B430E6300B90B4C /* Main.storyboard */; };
 		6D2F9EED1B430E6300B90B4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EEC1B430E6300B90B4C /* Images.xcassets */; };
 		6D2F9EF01B430E6300B90B4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EEE1B430E6300B90B4C /* LaunchScreen.xib */; };
+		6D2F9F081B430FD700B90B4C /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F071B430FD700B90B4C /* Bob.swift */; };
+		6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F091B43101A00B90B4C /* BobTest.swift */; };
+		6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F071B430FD700B90B4C /* Bob.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +35,8 @@
 		6D2F9EEF1B430E6300B90B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D2F9EF51B430E6300B90B4C /* exercismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2F9EFA1B430E6300B90B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D2F9F071B430FD700B90B4C /* Bob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bob.swift; path = ../../bob/Bob.swift; sourceTree = "<group>"; };
+		6D2F9F091B43101A00B90B4C /* BobTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BobTest.swift; path = ../../bob/BobTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 		6D2F9EE21B430E6300B90B4C /* exercism */ = {
 			isa = PBXGroup;
 			children = (
+				6D2F9F071B430FD700B90B4C /* Bob.swift */,
 				6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */,
 				6D2F9EE91B430E6300B90B4C /* Main.storyboard */,
 				6D2F9EEC1B430E6300B90B4C /* Images.xcassets */,
@@ -93,6 +99,7 @@
 		6D2F9EF81B430E6300B90B4C /* exercismTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D2F9F091B43101A00B90B4C /* BobTest.swift */,
 				6D2F9EF91B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercismTests;
@@ -207,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
+				6D2F9F081B430FD700B90B4C /* Bob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */,
+				6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
