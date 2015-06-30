@@ -20,6 +20,9 @@
 		6D3F22B01B4312950083C5A3 /* Hamming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AF1B4312950083C5A3 /* Hamming.swift */; };
 		6D3F22B11B4312950083C5A3 /* Hamming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AF1B4312950083C5A3 /* Hamming.swift */; };
 		6D3F22B41B43129C0083C5A3 /* HammingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22B21B43129C0083C5A3 /* HammingTest.swift */; };
+		6D3F22B61B4312F10083C5A3 /* WordCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22B51B4312F10083C5A3 /* WordCount.swift */; };
+		6D3F22B71B4312F10083C5A3 /* WordCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22B51B4312F10083C5A3 /* WordCount.swift */; };
+		6D3F22B91B4312F80083C5A3 /* WordCountTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22B81B4312F80083C5A3 /* WordCountTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,8 @@
 		6D3F22AC1B4312400083C5A3 /* LeapTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeapTest.swift; path = ../../leap/LeapTest.swift; sourceTree = "<group>"; };
 		6D3F22AF1B4312950083C5A3 /* Hamming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hamming.swift; path = ../../hamming/Hamming.swift; sourceTree = "<group>"; };
 		6D3F22B21B43129C0083C5A3 /* HammingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HammingTest.swift; path = ../../hamming/HammingTest.swift; sourceTree = "<group>"; };
+		6D3F22B51B4312F10083C5A3 /* WordCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordCount.swift; path = "../../word-count/WordCount.swift"; sourceTree = "<group>"; };
+		6D3F22B81B4312F80083C5A3 /* WordCountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordCountTest.swift; path = "../../word-count/WordCountTest.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +100,7 @@
 				6D2F9F071B430FD700B90B4C /* Bob.swift */,
 				6D3F22AA1B4312380083C5A3 /* Leap.swift */,
 				6D3F22AF1B4312950083C5A3 /* Hamming.swift */,
+				6D3F22B51B4312F10083C5A3 /* WordCount.swift */,
 				6D2F9EE31B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercism;
@@ -114,6 +120,7 @@
 				6D2F9F091B43101A00B90B4C /* BobTest.swift */,
 				6D3F22AC1B4312400083C5A3 /* LeapTest.swift */,
 				6D3F22B21B43129C0083C5A3 /* HammingTest.swift */,
+				6D3F22B81B4312F80083C5A3 /* WordCountTest.swift */,
 				6D2F9EF91B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercismTests;
@@ -227,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3F22B61B4312F10083C5A3 /* WordCount.swift in Sources */,
 				6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */,
 				6D3F22B01B4312950083C5A3 /* Hamming.swift in Sources */,
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
@@ -241,6 +249,8 @@
 				6D3F22B11B4312950083C5A3 /* Hamming.swift in Sources */,
 				6D3F22B41B43129C0083C5A3 /* HammingTest.swift in Sources */,
 				6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */,
+				6D3F22B91B4312F80083C5A3 /* WordCountTest.swift in Sources */,
+				6D3F22B71B4312F10083C5A3 /* WordCount.swift in Sources */,
 				6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */,
 				6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */,
 				6D3F22AE1B4312430083C5A3 /* Leap.swift in Sources */,
