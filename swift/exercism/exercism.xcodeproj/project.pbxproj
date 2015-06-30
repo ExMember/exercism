@@ -14,6 +14,9 @@
 		6D2F9F081B430FD700B90B4C /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F071B430FD700B90B4C /* Bob.swift */; };
 		6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F091B43101A00B90B4C /* BobTest.swift */; };
 		6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9F071B430FD700B90B4C /* Bob.swift */; };
+		6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AA1B4312380083C5A3 /* Leap.swift */; };
+		6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AC1B4312400083C5A3 /* LeapTest.swift */; };
+		6D3F22AE1B4312430083C5A3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AA1B4312380083C5A3 /* Leap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 		6D2F9EFA1B430E6300B90B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2F9F071B430FD700B90B4C /* Bob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Bob.swift; path = ../../bob/Bob.swift; sourceTree = "<group>"; };
 		6D2F9F091B43101A00B90B4C /* BobTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BobTest.swift; path = ../../bob/BobTest.swift; sourceTree = "<group>"; };
+		6D3F22AA1B4312380083C5A3 /* Leap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Leap.swift; path = ../../leap/Leap.swift; sourceTree = "<group>"; };
+		6D3F22AC1B4312400083C5A3 /* LeapTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeapTest.swift; path = ../../leap/LeapTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				6D2F9F071B430FD700B90B4C /* Bob.swift */,
+				6D3F22AA1B4312380083C5A3 /* Leap.swift */,
 				6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */,
 				6D2F9EE91B430E6300B90B4C /* Main.storyboard */,
 				6D2F9EEC1B430E6300B90B4C /* Images.xcassets */,
@@ -100,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				6D2F9F091B43101A00B90B4C /* BobTest.swift */,
+				6D3F22AC1B4312400083C5A3 /* LeapTest.swift */,
 				6D2F9EF91B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercismTests;
@@ -213,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */,
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
 				6D2F9F081B430FD700B90B4C /* Bob.swift in Sources */,
 			);
@@ -222,8 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */,
 				6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */,
 				6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */,
+				6D3F22AE1B4312430083C5A3 /* Leap.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +421,7 @@
 				6D2F9F011B430E6300B90B4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D2F9F021B430E6300B90B4C /* Build configuration list for PBXNativeTarget "exercismTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +430,7 @@
 				6D2F9F041B430E6300B90B4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
