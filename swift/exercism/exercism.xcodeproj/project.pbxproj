@@ -17,6 +17,9 @@
 		6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AA1B4312380083C5A3 /* Leap.swift */; };
 		6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AC1B4312400083C5A3 /* LeapTest.swift */; };
 		6D3F22AE1B4312430083C5A3 /* Leap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AA1B4312380083C5A3 /* Leap.swift */; };
+		6D3F22B01B4312950083C5A3 /* Hamming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AF1B4312950083C5A3 /* Hamming.swift */; };
+		6D3F22B11B4312950083C5A3 /* Hamming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22AF1B4312950083C5A3 /* Hamming.swift */; };
+		6D3F22B41B43129C0083C5A3 /* HammingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22B21B43129C0083C5A3 /* HammingTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,8 @@
 		6D2F9F091B43101A00B90B4C /* BobTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BobTest.swift; path = ../../bob/BobTest.swift; sourceTree = "<group>"; };
 		6D3F22AA1B4312380083C5A3 /* Leap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Leap.swift; path = ../../leap/Leap.swift; sourceTree = "<group>"; };
 		6D3F22AC1B4312400083C5A3 /* LeapTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LeapTest.swift; path = ../../leap/LeapTest.swift; sourceTree = "<group>"; };
+		6D3F22AF1B4312950083C5A3 /* Hamming.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Hamming.swift; path = ../../hamming/Hamming.swift; sourceTree = "<group>"; };
+		6D3F22B21B43129C0083C5A3 /* HammingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HammingTest.swift; path = ../../hamming/HammingTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +88,13 @@
 		6D2F9EE21B430E6300B90B4C /* exercism */ = {
 			isa = PBXGroup;
 			children = (
-				6D2F9F071B430FD700B90B4C /* Bob.swift */,
-				6D3F22AA1B4312380083C5A3 /* Leap.swift */,
 				6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */,
 				6D2F9EE91B430E6300B90B4C /* Main.storyboard */,
 				6D2F9EEC1B430E6300B90B4C /* Images.xcassets */,
 				6D2F9EEE1B430E6300B90B4C /* LaunchScreen.xib */,
+				6D2F9F071B430FD700B90B4C /* Bob.swift */,
+				6D3F22AA1B4312380083C5A3 /* Leap.swift */,
+				6D3F22AF1B4312950083C5A3 /* Hamming.swift */,
 				6D2F9EE31B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercism;
@@ -107,6 +113,7 @@
 			children = (
 				6D2F9F091B43101A00B90B4C /* BobTest.swift */,
 				6D3F22AC1B4312400083C5A3 /* LeapTest.swift */,
+				6D3F22B21B43129C0083C5A3 /* HammingTest.swift */,
 				6D2F9EF91B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercismTests;
@@ -221,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */,
+				6D3F22B01B4312950083C5A3 /* Hamming.swift in Sources */,
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
 				6D2F9F081B430FD700B90B4C /* Bob.swift in Sources */,
 			);
@@ -230,6 +238,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D3F22B11B4312950083C5A3 /* Hamming.swift in Sources */,
+				6D3F22B41B43129C0083C5A3 /* HammingTest.swift in Sources */,
 				6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */,
 				6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */,
 				6D2F9F0B1B43102500B90B4C /* Bob.swift in Sources */,
