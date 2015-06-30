@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */; };
-		6D2F9EE81B430E6300B90B4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9EE71B430E6300B90B4C /* ViewController.swift */; };
 		6D2F9EEB1B430E6300B90B4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EE91B430E6300B90B4C /* Main.storyboard */; };
 		6D2F9EED1B430E6300B90B4C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EEC1B430E6300B90B4C /* Images.xcassets */; };
 		6D2F9EF01B430E6300B90B4C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D2F9EEE1B430E6300B90B4C /* LaunchScreen.xib */; };
-		6D2F9EFC1B430E6300B90B4C /* exercismTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2F9EFB1B430E6300B90B4C /* exercismTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +27,11 @@
 		6D2F9EE01B430E6300B90B4C /* exercism.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercism.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2F9EE41B430E6300B90B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6D2F9EE71B430E6300B90B4C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6D2F9EEA1B430E6300B90B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D2F9EEC1B430E6300B90B4C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6D2F9EEF1B430E6300B90B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6D2F9EF51B430E6300B90B4C /* exercismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = exercismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D2F9EFA1B430E6300B90B4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D2F9EFB1B430E6300B90B4C /* exercismTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercismTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				6D2F9EE51B430E6300B90B4C /* AppDelegate.swift */,
-				6D2F9EE71B430E6300B90B4C /* ViewController.swift */,
 				6D2F9EE91B430E6300B90B4C /* Main.storyboard */,
 				6D2F9EEC1B430E6300B90B4C /* Images.xcassets */,
 				6D2F9EEE1B430E6300B90B4C /* LaunchScreen.xib */,
@@ -98,7 +93,6 @@
 		6D2F9EF81B430E6300B90B4C /* exercismTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D2F9EFB1B430E6300B90B4C /* exercismTests.swift */,
 				6D2F9EF91B430E6300B90B4C /* Supporting Files */,
 			);
 			path = exercismTests;
@@ -212,7 +206,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2F9EE81B430E6300B90B4C /* ViewController.swift in Sources */,
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +214,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2F9EFC1B430E6300B90B4C /* exercismTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
