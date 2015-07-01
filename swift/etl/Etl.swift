@@ -1,5 +1,5 @@
 class ETL {
-  class func transform(old:Dictionary<Int,[String]>) -> Dictionary<String,Int> {
+  class func transform(old:[Int: [String]]) -> [String: Int] {
     var new_score_table = [String: Int]()
     
     for (score, letters) in old {
