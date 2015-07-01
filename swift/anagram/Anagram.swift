@@ -26,6 +26,7 @@ class Anagram {
   }
   
   private func isAnagram(candidate:String) -> Bool {
+    if candidate == word { return false }
     let candidateCharCount = Anagram.createCharCount(candidate)
     return candidateCharCount == self.charCount
   }
