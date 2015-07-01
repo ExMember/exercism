@@ -11,6 +11,12 @@ class Anagram {
     return candidates.filter(isAnagram)
   }
   
+  private func isAnagram(candidate:String) -> Bool {
+    if candidate.lowercaseString == word.lowercaseString { return false }
+    let candidateCharCount = Anagram.createCharCount(candidate)
+    return candidateCharCount == self.charCount
+  }
+  
   private class func createCharCount(word:String) -> [Character:Int] {
     var charCount = [Character:Int]()
     
@@ -22,11 +28,5 @@ class Anagram {
       }
     }
     return charCount
-  }
-  
-  private func isAnagram(candidate:String) -> Bool {
-    if candidate.lowercaseString == word.lowercaseString { return false }
-    let candidateCharCount = Anagram.createCharCount(candidate)
-    return candidateCharCount == self.charCount
   }
 }
