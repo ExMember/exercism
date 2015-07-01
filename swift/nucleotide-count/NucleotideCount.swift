@@ -1,21 +1,28 @@
 class DNA {
-  let baseCounts:[String:Int]
+  var baseCounts = ["T": 0, "A": 0, "C": 0, "G": 0]
+  var valid = true
   
   init?(strand:String){
-    self.baseCounts = DNA.countBases(strand) ?? [:]
-    if self.baseCounts == [:] { return nil }
+    countBases(strand)
+    if !valid { return nil }
   }
   
-  private class func countBases(strand:String) -> [String:Int]? {
-    var baseCounts = ["T": 0, "A": 0, "C": 0, "G": 0]
+  private func countBases(strand:String) {
     for base in strand {
-      if let count = baseCounts[String(base)] {
-        baseCounts[String(base)] = count + 1
-      } else {
-        return nil
-      }
+      addBase(base)
     }
-    return baseCounts
+  }
+  
+  private func addBase(base:String) {
+    if let count = baseCounts[base] {
+      baseCounts[base] = count + 1
+    } else {
+      valid = false
+    }
+  }
+  
+  private func addBase(base:Character) {
+    addBase(String(base))
   }
   
   func count(base:String) -> Int {
