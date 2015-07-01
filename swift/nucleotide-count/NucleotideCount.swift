@@ -1,5 +1,5 @@
 class DNA {
-  var baseCounts:[String:Int]
+  let baseCounts:[String:Int]
   
   init?(strand:String){
     self.baseCounts = DNA.countBases(strand) ?? [:]
