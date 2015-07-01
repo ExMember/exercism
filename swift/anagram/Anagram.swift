@@ -8,10 +8,7 @@ class Anagram {
   }
   
   func match(candidates:[String]) -> [String]{
-    var anagrams = candidates.filter{ (candidate) -> Bool in
-      let candidateCharCount = Anagram.createCharCount(candidate)
-      return candidateCharCount == self.charCount
-    }
+    var anagrams = candidates.filter(isAnagram)
     return anagrams
   }
   
@@ -26,5 +23,10 @@ class Anagram {
       }
     }
     return charCount
+  }
+  
+  private func isAnagram(candidate:String) -> Bool {
+    let candidateCharCount = Anagram.createCharCount(candidate)
+    return candidateCharCount == self.charCount
   }
 }
