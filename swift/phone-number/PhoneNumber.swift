@@ -1,9 +1,12 @@
 class PhoneNumber {
+  static let INVALID_NUMBER = "0000000000"
+
   let normalizedNumber:String
 
   init(startingNumber:String){
     var number = PhoneNumber.filterNonDigits(startingNumber)
-    number = PhoneNumber.fixLength(number)
+    number = PhoneNumber.fixLongNumber(number)
+    number = PhoneNumber.fixShortNumber(number)
     normalizedNumber = number
   }
 
@@ -18,12 +21,20 @@ class PhoneNumber {
     return filteredString
   }
 
-  private class func fixLength(var number:String) -> String {
+  private class func fixLongNumber(var number:String) -> String {
     if count(number) == 11 {
       var leadingDigit = number.removeAtIndex(number.startIndex)
-      if leadingDigit != "1" { number = "0000000000" }
+      if leadingDigit != "1" { number = INVALID_NUMBER }
     }
     return number
+  }
+
+  private class func fixShortNumber(number:String) -> String {
+    if count(number) < 10 {
+      return INVALID_NUMBER
+    } else {
+      return number
+    }
   }
 
   func number() -> String {
