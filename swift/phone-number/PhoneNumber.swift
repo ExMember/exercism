@@ -42,7 +42,9 @@ class PhoneNumber {
   }
 
   func areaCode() -> String {
-    return ""
+    var firstIndex = normalizedNumber.startIndex
+    var lastIndex = advance(firstIndex, 2)
+    return normalizedNumber[firstIndex...lastIndex]
   }
 
   func description() -> String {
