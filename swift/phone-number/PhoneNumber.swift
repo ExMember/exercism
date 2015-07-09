@@ -6,7 +6,7 @@ class PhoneNumber {
   }
 
   private class func filterNonDigits(string:String) -> String {
-    var digits:Set<Character> = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    var digits = Set("0123456789")
     var filteredString = ""
     for character in string {
       if digits.contains(character) {
