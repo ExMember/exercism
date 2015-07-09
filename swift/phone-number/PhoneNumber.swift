@@ -20,7 +20,8 @@ class PhoneNumber {
 
   private class func fixLength(var number:String) -> String {
     if count(number) == 11 {
-      number.removeAtIndex(number.startIndex)
+      var leadingDigit = number.removeAtIndex(number.startIndex)
+      if leadingDigit != "1" { number = "0000000000" }
     }
     return number
   }
