@@ -1,5 +1,3 @@
-import Foundation
-
 class Hamming {
   class func compute(initial:String, against:String) -> Int? {
     if count(initial) != count(against) {

@@ -1,11 +1,9 @@
-import Foundation
-
 class Year {
 
   let isLeapYear: Bool
 
-  init(calendarYear:NSInteger) {
-    func isDivisableBy(number:NSInteger, divisor:NSInteger) -> Bool {
+  init(calendarYear:Int) {
+    func isDivisableBy(number:Int, divisor:Int) -> Bool {
       return (number % divisor) == 0
     }
 
