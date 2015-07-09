@@ -1,20 +1,34 @@
 class Year {
 
-  let isLeapYear: Bool
+  let isLeapYear:Bool
+
+  private class func isLeapYear(year:Int) -> Bool {
+    if(!isDivisibleBy4(year)) {
+      return false
+    } else if(isDivisibleBy100(year) && !isDivisibleBy400(year)) {
+      return false
+    } else {
+      return true
+    }
+  }
+
+  private class func isDivisibleBy4(number:Int) -> Bool {
+    return isDivisibleBy(number, divisor:4)
+  }
+
+  private class func isDivisibleBy100(number:Int) -> Bool {
+    return isDivisibleBy(number, divisor:100)
+  }
+
+  private class func isDivisibleBy400(number:Int) -> Bool {
+    return isDivisibleBy(number, divisor:400)
+  }
+
+  private class func isDivisibleBy(number:Int, divisor:Int) -> Bool {
+    return (number % divisor) == 0
+  }
 
   init(calendarYear:Int) {
-    func isDivisableBy(number:Int, divisor:Int) -> Bool {
-      return (number % divisor) == 0
-    }
-
-    if(!isDivisableBy(calendarYear, 4)) {
-      isLeapYear = false
-
-    } else if(isDivisableBy(calendarYear, 100) && !isDivisableBy(calendarYear, 400)) {
-      isLeapYear = false
-
-    } else {
-      isLeapYear = true
-    }
+    self.isLeapYear = Year.isLeapYear(calendarYear)
   }
 }
