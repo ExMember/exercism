@@ -2,7 +2,9 @@ class PhoneNumber {
   let normalizedNumber:String
 
   init(startingNumber:String){
-    normalizedNumber = PhoneNumber.filterNonDigits(startingNumber)
+    var number = PhoneNumber.filterNonDigits(startingNumber)
+    number = PhoneNumber.fixLength(number)
+    normalizedNumber = number
   }
 
   private class func filterNonDigits(string:String) -> String {
@@ -14,6 +16,13 @@ class PhoneNumber {
       }
     }
     return filteredString
+  }
+
+  private class func fixLength(var number:String) -> String {
+    if count(number) == 11 {
+      number.removeAtIndex(number.startIndex)
+    }
+    return number
   }
 
   func number() -> String {
