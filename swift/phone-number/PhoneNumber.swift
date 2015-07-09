@@ -47,7 +47,19 @@ class PhoneNumber {
     return normalizedNumber[firstIndex...lastIndex]
   }
 
+  private func exchange() -> String {
+    var firstIndex = advance(normalizedNumber.startIndex, 3)
+    var lastIndex = advance(firstIndex, 2)
+    return normalizedNumber[firstIndex...lastIndex]
+  }
+
+  private func local() -> String {
+    var firstIndex = advance(normalizedNumber.startIndex, 6)
+    var lastIndex = normalizedNumber.endIndex
+    return normalizedNumber[firstIndex...lastIndex.predecessor()]
+  }
+
   func description() -> String {
-    return ""
+    return "(\(areaCode())) \(exchange())-\(local())"
   }
 }
