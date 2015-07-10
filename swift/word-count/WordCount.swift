@@ -7,25 +7,25 @@ class WordCount {
     inputString = words
   }
   
-  func count() -> Dictionary<String,Int> {
+  func count() -> [String:Int] {
     var runningCount = [String:Int]()
     var wordList = getWordList(inputString)
-  
+
     for word in wordList {
-      if let previousCount = runningCount[word] {
-        runningCount[word] = previousCount + 1
-      } else {
-        runningCount[word] = 1
-      }
+      runningCount[word] = (runningCount[word] ?? 0) + 1
     }
     return runningCount
   }
     
-  private func getWordList(input:String) -> Array<String> {
-    let lowercased_input = input.lowercaseString
-    let unwantedChars = NSCharacterSet.alphanumericCharacterSet().invertedSet
-    var words = lowercased_input.componentsSeparatedByCharactersInSet(unwantedChars)
+  private func getWordList(input:String) -> [String] {
+    var words = seperateIntoWords(input)
+    words = words.map({$0.lowercaseString})
     words = words.filter({$0 != ""})
     return words
+  }
+
+  private func seperateIntoWords(input:String) -> [String] {
+    let unwantedChars = NSCharacterSet.alphanumericCharacterSet().invertedSet
+    return input.componentsSeparatedByCharactersInSet(unwantedChars)
   }
 }
