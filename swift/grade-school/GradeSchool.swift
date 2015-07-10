@@ -3,7 +3,7 @@ class GradeSchool {
 
   func addStudent(name:String, grade:Int) -> [Int: [String]]{
     db[grade] = db[grade] ?? []
-    db[grade]!.append(name)
+    db[grade]?.append(name)
     return db
   }
 
