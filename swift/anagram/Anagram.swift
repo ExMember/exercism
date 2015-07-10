@@ -2,12 +2,12 @@ class Anagram {
   let word:String
   let sorted_chars:[Character]
   
-  init(word: String){
+  init(word: String) {
     self.word = word
     self.sorted_chars = sorted(word.lowercaseString)
   }
   
-  func match(candidates:[String]) -> [String]{
+  func match(candidates:[String]) -> [String] {
     return candidates.filter(isAnagram)
   }
   

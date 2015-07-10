@@ -3,7 +3,7 @@ class PhoneNumber {
 
   let normalizedNumber:String
 
-  init(startingNumber:String){
+  init(startingNumber:String) {
     var number = PhoneNumber.filterNonDigits(startingNumber)
     number = PhoneNumber.fixLongNumber(number)
     number = PhoneNumber.fixShortNumber(number)

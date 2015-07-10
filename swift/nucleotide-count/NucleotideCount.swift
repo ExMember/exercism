@@ -2,7 +2,7 @@ class DNA {
   var baseCounts = ["T": 0, "A": 0, "C": 0, "G": 0]
   var valid = true
   
-  init?(strand:String){
+  init?(strand:String) {
     countBases(strand)
     if !valid { return nil }
   }

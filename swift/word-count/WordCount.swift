@@ -3,7 +3,7 @@ import Foundation
 class WordCount {
   let inputString:String
   
-  init(words:String){
+  init(words:String) {
     inputString = words
   }
   
