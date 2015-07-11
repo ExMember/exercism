@@ -9,9 +9,7 @@ class WordCount {
   
   func count() -> [String:Int] {
     var runningCount:[String:Int] = [:]
-    var wordList = getWordList(inputString)
-
-    for word in wordList {
+    for word in getWordList(inputString) {
       runningCount[word] = (runningCount[word] ?? 0) + 1
     }
     return runningCount
