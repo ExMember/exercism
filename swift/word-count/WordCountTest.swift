@@ -49,4 +49,12 @@ class WordCountTest: XCTestCase {
 
     XCTAssertEqual(expected, result)
   }
+
+  func testContractions() {
+    let words = WordCount(words:"Don't use contractions")
+    let expected = ["don't": 1, "use": 1, "contractions": 1]
+    let result = words.count()
+
+    XCTAssertEqual(expected, result)
+  }
 }

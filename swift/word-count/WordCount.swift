@@ -20,12 +20,18 @@ class WordCount {
   private func getWordList(input:String) -> [String] {
     var words = seperateIntoWords(input)
     words = words.map({$0.lowercaseString})
+    words = words.map(stripPunctuation)
     words = words.filter({$0 != ""})
     return words
   }
 
   private func seperateIntoWords(input:String) -> [String] {
-    let unwantedChars = NSCharacterSet.alphanumericCharacterSet().invertedSet
+    let unwantedChars = NSCharacterSet.whitespaceAndNewlineCharacterSet()
     return input.componentsSeparatedByCharactersInSet(unwantedChars)
+  }
+
+  private func stripPunctuation(word:String) -> String {
+    let unwantedChars = NSCharacterSet.alphanumericCharacterSet().invertedSet
+    return word.stringByTrimmingCharactersInSet(unwantedChars)
   }
 }
