@@ -38,6 +38,9 @@
 		6D527FAD1B504AB8007139A9 /* GradeSchoolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */; };
 		6D527FAF1B504B01007139A9 /* GradeSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAE1B504B01007139A9 /* GradeSchool.swift */; };
 		6D527FB01B504B01007139A9 /* GradeSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAE1B504B01007139A9 /* GradeSchool.swift */; };
+		6D527FB21B50A163007139A9 /* RobotNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FB11B50A163007139A9 /* RobotNameTest.swift */; };
+		6D527FB41B50A257007139A9 /* RobotName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FB31B50A257007139A9 /* RobotName.swift */; };
+		6D527FB51B50A257007139A9 /* RobotName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FB31B50A257007139A9 /* RobotName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,8 @@
 		6D527FA81B4F12A6007139A9 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = "../../phone-number/PhoneNumber.swift"; sourceTree = "<group>"; };
 		6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradeSchoolTest.swift; path = "../../grade-school/GradeSchoolTest.swift"; sourceTree = "<group>"; };
 		6D527FAE1B504B01007139A9 /* GradeSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradeSchool.swift; path = "../../grade-school/GradeSchool.swift"; sourceTree = "<group>"; };
+		6D527FB11B50A163007139A9 /* RobotNameTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotNameTest.swift; path = "../../robot-name/RobotNameTest.swift"; sourceTree = "<group>"; };
+		6D527FB31B50A257007139A9 /* RobotName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotName.swift; path = "../../robot-name/RobotName.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +123,7 @@
 		6D2F9EE21B430E6300B90B4C /* exercism */ = {
 			isa = PBXGroup;
 			children = (
+				6D527FB31B50A257007139A9 /* RobotName.swift */,
 				6D527FAE1B504B01007139A9 /* GradeSchool.swift */,
 				6D527FA81B4F12A6007139A9 /* PhoneNumber.swift */,
 				6D30E1711B447650000E5523 /* NucleotideCount.swift */,
@@ -147,6 +153,7 @@
 		6D2F9EF81B430E6300B90B4C /* exercismTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D527FB11B50A163007139A9 /* RobotNameTest.swift */,
 				6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */,
 				6D527FA61B4F1222007139A9 /* PhoneNumberTest.swift */,
 				6D30E16F1B447632000E5523 /* NucleotideCountTest.swift */,
@@ -275,6 +282,7 @@
 				6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */,
 				6D3F22B01B4312950083C5A3 /* Hamming.swift in Sources */,
 				6D527FAF1B504B01007139A9 /* GradeSchool.swift in Sources */,
+				6D527FB41B50A257007139A9 /* RobotName.swift in Sources */,
 				6D3F22C01B4315760083C5A3 /* Etl.swift in Sources */,
 				6D30E1721B447650000E5523 /* NucleotideCount.swift in Sources */,
 				6D2F9EE61B430E6300B90B4C /* AppDelegate.swift in Sources */,
@@ -290,6 +298,8 @@
 				6D3F22B41B43129C0083C5A3 /* HammingTest.swift in Sources */,
 				6D3F22AD1B4312400083C5A3 /* LeapTest.swift in Sources */,
 				6D30E1731B447650000E5523 /* NucleotideCount.swift in Sources */,
+				6D527FB21B50A163007139A9 /* RobotNameTest.swift in Sources */,
+				6D527FB51B50A257007139A9 /* RobotName.swift in Sources */,
 				6D3F22CA1B439DC70083C5A3 /* Anagram.swift in Sources */,
 				6D3F22B91B4312F80083C5A3 /* WordCountTest.swift in Sources */,
 				6D3F22C41B439C140083C5A3 /* AnagramTest.swift in Sources */,
