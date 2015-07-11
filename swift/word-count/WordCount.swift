@@ -8,7 +8,7 @@ class WordCount {
   }
   
   func count() -> [String:Int] {
-    var runningCount = [String:Int]()
+    var runningCount:[String:Int] = [:]
     var wordList = getWordList(inputString)
 
     for word in wordList {
@@ -26,8 +26,8 @@ class WordCount {
   }
 
   private func seperateIntoWords(input:String) -> [String] {
-    let unwantedChars = NSCharacterSet.whitespaceAndNewlineCharacterSet()
-    return input.componentsSeparatedByCharactersInSet(unwantedChars)
+    let whitespaceChars = NSCharacterSet.whitespaceAndNewlineCharacterSet()
+    return input.componentsSeparatedByCharactersInSet(whitespaceChars)
   }
 
   private func stripPunctuation(word:String) -> String {
