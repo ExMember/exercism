@@ -1,5 +1,5 @@
 extension Array {
-  func accumulate<T>(function: (T -> T)) -> Array<T>{
-    return Array<T>()
+  func accumulate<OriginalType,NewType>(function: (OriginalType -> NewType)) -> Array<NewType>{
+    return Array<NewType>()
   }
 }

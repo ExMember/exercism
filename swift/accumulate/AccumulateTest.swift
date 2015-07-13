@@ -72,7 +72,6 @@ class AccumulateTest: XCTestCase {
         XCTAssert(expected == result)
     }
 
-/*
     func testAccumulateRecursively() {
         
         let input =   ["a","b","c"]
@@ -96,5 +95,4 @@ class AccumulateTest: XCTestCase {
         
         XCTAssert(expected == result)
     }
-*/
 }
