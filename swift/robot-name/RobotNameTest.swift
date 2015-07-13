@@ -34,6 +34,7 @@ class RobotNameTest: XCTestCase {
     XCTAssertNotEqual(firstName, secondName)
   }
 
+/*
   func testEnoughUniqueNames() {
     var possibleNamesCount = 1000 * 26 * 26
     var names:Set<String> = []
@@ -42,4 +43,5 @@ class RobotNameTest: XCTestCase {
     }
     XCTAssertEqual(names.count, possibleNamesCount, "Duplicated names")
   }
+*/
 }
