@@ -1,21 +1,20 @@
 class Allergies {
-  static let eggs:UInt8         = 0b00000001
-  static let peanuts:UInt8      = 0b00000010
-  static let shellfish:UInt8    = 0b00000100
-  static let strawberries:UInt8 = 0b00001000
-  static let tomatoes:UInt8     = 0b00010000
-  static let chocolate :UInt8   = 0b00100000
-  static let pollen:UInt8       = 0b01000000
-  static let cats:UInt8         = 0b10000000
+  static let eggs:UInt         = 0b00000001
+  static let peanuts:UInt      = 0b00000010
+  static let shellfish:UInt    = 0b00000100
+  static let strawberries:UInt = 0b00001000
+  static let tomatoes:UInt     = 0b00010000
+  static let chocolate :UInt   = 0b00100000
+  static let pollen:UInt       = 0b01000000
+  static let cats:UInt         = 0b10000000
+
+  let score:UInt
   
-  init(UInt){
+  init(_ score:UInt){
+    self.score = score
   }
 
-  func hasAllergy(score:UInt) -> Bool{
-    return hasAllergy(UInt8(score))
-  }
-
-  func hasAllergy(score:UInt8) -> Bool{
-    return false
+  func hasAllergy(allergy:UInt) -> Bool{
+    return (score & allergy) != 0
   }
 }
