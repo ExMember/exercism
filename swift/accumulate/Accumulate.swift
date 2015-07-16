@@ -1,5 +1,11 @@
 extension Array {
-  func accumulate<OriginalType,NewType>(function: (OriginalType -> NewType)) -> Array<NewType>{
-    return Array<NewType>()
+  func accumulate<OldType,NewType>(function: (OldType) -> NewType) -> Array<NewType>{
+    var newArray = Array<NewType>()
+    var oldArray = Array<OldType>()
+
+    for element in oldArray {
+      newArray.append(function(element))
+    }
+    return newArray
   }
 }
