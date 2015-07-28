@@ -3,16 +3,22 @@ class SumOfMultiples {
     var multiples = Set<Int>()
     var factors = inMultiples.filter {$0 != 0}
     
-      for multiple in factors {
-        for var testNumber = multiple; testNumber < limit; testNumber += multiple {
-          multiples.insert(testNumber)
-        }
+      for factor in factors {
+        multiples = multiples.union(multiplesOf(factor, limit: limit))
       }
     
-    return sumSet(multiples)
+    return sumOfSet(multiples)
   }
 
-  private class func sumSet(set:Set<Int>) -> Int {
+  private class func multiplesOf(factor:Int, limit:Int) -> Set<Int>{
+    var result = Set<Int>()
+    for var multiple = factor; multiple < limit; multiple += factor {
+      result.insert(multiple)
+    }
+    return result
+  }
+  
+  private class func sumOfSet(set:Set<Int>) -> Int {
     return Array(set).reduce(0, combine: +)
   }
 }
