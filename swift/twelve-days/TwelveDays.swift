@@ -19,12 +19,19 @@ class TwelveDaysSong {
     5:"fifth", 6:"sixth", 7:"seventh", 8:"eighth", 9:"ninth", 10:"tenth",
     11:"eleventh", 12:"twelfth"]
   
+  private static let GIFTS = [12:"twelve Drummers Drumming",
+    11:"eleven Pipers Piping", 10:"ten Lords-a-Leaping",
+    9:"nine Ladies Dancing", 8:"eight Maids-a-Milking",
+    7:"seven Swans-a-Swimming", 6:"six Geese-a-Laying", 5:"five Gold Rings",
+    4:"four Calling Birds", 3:"three French Hens", 2:"two Turtle Doves",
+    1:"a Partridge in a Pear Tree"]
+  
   private class func preamble(day:Int) -> String {
     return "On the \(ordinal(day)) day of Christmas my true love gave to me,"
   }
   
   private class func ordinal(number:Int) -> String {
-    return ORDINALS[number] ?? "\(number)-th"
+    return ORDINALS[number] ?? "\(number)th"
   }
   
   private class func giftList(day:Int) -> String {
@@ -35,22 +42,15 @@ class TwelveDaysSong {
     return (", ").join(gifts)
   }
   
-  private static let GIFTS = [12:"twelve Drummers Drumming",
-    11:"eleven Pipers Piping", 10:"ten Lords-a-Leaping",
-    9:"nine Ladies Dancing", 8:"eight Maids-a-Milking",
-    7:"seven Swans-a-Swimming", 6:"six Geese-a-Laying", 5:"five Gold Rings",
-    4:"four Calling Birds", 3:"three French Hens", 2:"two Turtle Doves",
-    1:"a Partridge in a Pear Tree"]
-  
-  private class func giftForDay(day:Int) -> String {
+  private class func newGiftForDay(day:Int) -> String {
     return GIFTS[day] ?? "\(day) somethings"
   }
   
   private class func giftsForDay(day:Int) -> [String] {
     if day <= 1 {
-      return [giftForDay(day)]
+      return [newGiftForDay(day)]
     } else {
-      return [giftForDay(day)] + giftsForDay(day - 1)
+      return [newGiftForDay(day)] + giftsForDay(day - 1)
     }
   }
 }
