@@ -4,11 +4,23 @@ class SumOfMultiples {
     
     for i in 1..<limit {
       for multiple in inMultiples {
-        if (multiple != 0) && (i % multiple) == 0 {
+        if isDivisibleBy(i, divisor: multiple) {
           multiples.insert(i)
         }
       }
     }
-    return Array(multiples).reduce(0,combine:+)
+    
+    return sumSet(multiples)
+  }
+
+  private class func isDivisibleBy(number:Int, divisor:Int) -> Bool {
+    if divisor == 0 {
+      return false
+    }
+    return (number % divisor) == 0
+  }
+  
+  private class func sumSet(set:Set<Int>) -> Int {
+    return Array(set).reduce(0, combine: +)
   }
 }
