@@ -4,7 +4,11 @@ class TwelveDaysSong {
   }
   
   class func verses(from:Int, _ to:Int) -> String {
-    return "verses \(from) through \(to)"
+    var result = ""
+    for verseNumber in from...to {
+      result += verse(verseNumber) + "\n"
+    }
+    return result
   }
   
   class func sing() -> String {
