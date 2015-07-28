@@ -4,7 +4,7 @@ class SumOfMultiples {
     
     for i in 1..<limit {
       for multiple in inMultiples {
-        if (i % multiple) == 0 {
+        if (multiple != 0) && (i % multiple) == 0 {
           multiples.insert(i)
         }
       }
