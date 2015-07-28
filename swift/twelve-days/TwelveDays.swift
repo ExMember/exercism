@@ -24,6 +24,29 @@ class TwelveDaysSong {
   }
   
   private class func giftList(day:Int) -> String {
-    return "a Partridge in a Pear Tree"
+    var gifts = giftsForDay(day)
+    if gifts.count > 1 {
+      gifts[gifts.count - 1] = "and " + gifts[gifts.count - 1]
+    }
+    return (", ").join(gifts)
+  }
+  
+  private static let GIFTS = [12:"twelve Drummers Drumming",
+    11:"eleven Pipers Piping", 10:"ten Lords-a-Leaping",
+    9:"nine Ladies Dancing", 8:"eight Maids-a-Milking",
+    7:"seven Swans-a-Swimming", 6:"six Geese-a-Laying", 5:"five Gold Rings",
+    4:"four Calling Birds", 3:"three French Hens", 2:"two Turtle Doves",
+    1:"a Partridge in a Pear Tree"]
+  
+  private class func giftForDay(day:Int) -> String {
+    return GIFTS[day] ?? "\(day) somethings"
+  }
+  
+  private class func giftsForDay(day:Int) -> [String] {
+    if day <= 1 {
+      return [giftForDay(day)]
+    } else {
+      return [giftForDay(day)] + giftsForDay(day - 1)
+    }
   }
 }
