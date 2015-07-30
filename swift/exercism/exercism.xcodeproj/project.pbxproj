@@ -53,6 +53,9 @@
 		6D87DC5B1B69EA4800FE8ED0 /* GigasecondTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC5A1B69EA4800FE8ED0 /* GigasecondTest.swift */; };
 		6D87DC5D1B69EA5C00FE8ED0 /* Gigasecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC5C1B69EA5C00FE8ED0 /* Gigasecond.swift */; };
 		6D87DC5E1B69EA5C00FE8ED0 /* Gigasecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC5C1B69EA5C00FE8ED0 /* Gigasecond.swift */; };
+		6D87DC601B69FEA100FE8ED0 /* MeetupTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC5F1B69FEA100FE8ED0 /* MeetupTest.swift */; };
+		6D87DC621B69FEBE00FE8ED0 /* Meetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC611B69FEBE00FE8ED0 /* Meetup.swift */; };
+		6D87DC631B69FEBE00FE8ED0 /* Meetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D87DC611B69FEBE00FE8ED0 /* Meetup.swift */; };
 		6DE3CFE41B66FF74006F4464 /* SumOfMultiplesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE3CFE31B66FF74006F4464 /* SumOfMultiplesTest.swift */; };
 		6DE3CFE61B66FF92006F4464 /* SumOfMultiples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE3CFE51B66FF92006F4464 /* SumOfMultiples.swift */; };
 		6DE3CFE71B67005C006F4464 /* SumOfMultiples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE3CFE51B66FF92006F4464 /* SumOfMultiples.swift */; };
@@ -111,6 +114,8 @@
 		6D527FC51B545BE7007139A9 /* Accumulate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Accumulate.swift; path = ../../accumulate/Accumulate.swift; sourceTree = "<group>"; };
 		6D87DC5A1B69EA4800FE8ED0 /* GigasecondTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GigasecondTest.swift; path = ../../gigasecond/GigasecondTest.swift; sourceTree = "<group>"; };
 		6D87DC5C1B69EA5C00FE8ED0 /* Gigasecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gigasecond.swift; path = ../../gigasecond/Gigasecond.swift; sourceTree = "<group>"; };
+		6D87DC5F1B69FEA100FE8ED0 /* MeetupTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MeetupTest.swift; path = ../../meetup/MeetupTest.swift; sourceTree = "<group>"; };
+		6D87DC611B69FEBE00FE8ED0 /* Meetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Meetup.swift; path = ../../meetup/Meetup.swift; sourceTree = "<group>"; };
 		6DE3CFE31B66FF74006F4464 /* SumOfMultiplesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SumOfMultiplesTest.swift; path = "../../sum-of-multiples/SumOfMultiplesTest.swift"; sourceTree = "<group>"; };
 		6DE3CFE51B66FF92006F4464 /* SumOfMultiples.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SumOfMultiples.swift; path = "../../sum-of-multiples/SumOfMultiples.swift"; sourceTree = "<group>"; };
 		6DE3CFE81B67EB0A006F4464 /* TwelveDaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TwelveDaysTest.swift; path = "../../twelve-days/TwelveDaysTest.swift"; sourceTree = "<group>"; };
@@ -158,6 +163,7 @@
 		6D2F9EE21B430E6300B90B4C /* exercism */ = {
 			isa = PBXGroup;
 			children = (
+				6D87DC611B69FEBE00FE8ED0 /* Meetup.swift */,
 				6D87DC5C1B69EA5C00FE8ED0 /* Gigasecond.swift */,
 				6DE3CFEF1B68B8AA006F4464 /* SpaceAge.swift */,
 				6DE3CFEA1B67EB28006F4464 /* TwelveDays.swift */,
@@ -195,6 +201,7 @@
 		6D2F9EF81B430E6300B90B4C /* exercismTests */ = {
 			isa = PBXGroup;
 			children = (
+				6D87DC5F1B69FEA100FE8ED0 /* MeetupTest.swift */,
 				6D87DC5A1B69EA4800FE8ED0 /* GigasecondTest.swift */,
 				6DE3CFED1B68B887006F4464 /* SpaceAgeTest.swift */,
 				6DE3CFE81B67EB0A006F4464 /* TwelveDaysTest.swift */,
@@ -330,6 +337,7 @@
 				6D527FA91B4F12A6007139A9 /* PhoneNumber.swift in Sources */,
 				6DE3CFEB1B67EB28006F4464 /* TwelveDays.swift in Sources */,
 				6DE3CFF01B68B8AA006F4464 /* SpaceAge.swift in Sources */,
+				6D87DC621B69FEBE00FE8ED0 /* Meetup.swift in Sources */,
 				6D527FBA1B5152A6007139A9 /* PerfectNumbers.swift in Sources */,
 				6D3F22AB1B4312380083C5A3 /* Leap.swift in Sources */,
 				6D87DC5D1B69EA5C00FE8ED0 /* Gigasecond.swift in Sources */,
@@ -382,8 +390,10 @@
 				6DE3CFE91B67EB0A006F4464 /* TwelveDaysTest.swift in Sources */,
 				6D527FC71B545BE7007139A9 /* Accumulate.swift in Sources */,
 				6DE3CFEE1B68B887006F4464 /* SpaceAgeTest.swift in Sources */,
+				6D87DC601B69FEA100FE8ED0 /* MeetupTest.swift in Sources */,
 				6D527FB01B504B01007139A9 /* GradeSchool.swift in Sources */,
 				6D527FB81B515281007139A9 /* PerfectNumbersTest.swift in Sources */,
+				6D87DC631B69FEBE00FE8ED0 /* Meetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
