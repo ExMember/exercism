@@ -39,7 +39,7 @@ class TwelveDaysSong {
     if gifts.count > 1 {
       gifts[gifts.count - 1] = "and " + gifts[gifts.count - 1]
     }
-    return (", ").join(gifts)
+    return gifts.joinWithSeparator((", "))
   }
   
   private class func newGiftForDay(day:Int) -> String {

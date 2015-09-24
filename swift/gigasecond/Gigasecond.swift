@@ -2,7 +2,7 @@ import Foundation
 
 class Gigasecond {
   class func from(dateString:String) -> NSDate {
-    var fromDate = dateFromString(dateString)
+    let fromDate = dateFromString(dateString)
     return fromDate.dateByAddingTimeInterval(GIGASECOND)
   }
   
@@ -13,6 +13,6 @@ class Gigasecond {
     dateFormatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
     dateFormatter.dateFormat = "yyy-MM-dd'T'HH:mm:ss"
     let date = dateFormatter.dateFromString(dateString)
-    return date ?? NSDate.distantFuture() as! NSDate
+    return date ?? NSDate.distantFuture() 
   }
 }

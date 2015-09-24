@@ -8,7 +8,7 @@ class DNA {
   }
   
   private func countBases(strand:String) {
-    for base in strand {
+    for base in strand.characters {
       addBase(base)
     }
   }

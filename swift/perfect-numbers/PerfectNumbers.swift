@@ -4,7 +4,7 @@ class NumberClassifier {
   init(number:Int) {
     var factors = NumberClassifier.factorsOf(number)
     factors.remove(number)
-    var sum = Array(factors).reduce(0, combine:+)
+    let sum = Array(factors).reduce(0, combine:+)
 
     if sum < number {
       classification = .Deficient

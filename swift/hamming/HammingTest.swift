@@ -12,6 +12,7 @@ class hammingTests: XCTestCase {
     let expected = 0
     XCTAssertEqual(expected,result)
   }
+    // FOO
 
   func testCompleteHammingDistanceInSmallStrand() {
     let result = Hamming.compute("ACT", against: "GGA")!
@@ -33,7 +34,6 @@ class hammingTests: XCTestCase {
 
   func testReturnsNilWhenOtherStrandLonger() {
     let result = Hamming.compute("AAACTAGGGG", against:"AGGCTAGCGGTAGGAC")
-    let expected: Int? = nil
     XCTAssertNil(result, "Different length strands return nil")
   }
 

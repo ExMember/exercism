@@ -14,7 +14,7 @@ class Robot {
     return letters() + digits()
   }
 
-  private static let LETTERS = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+  private static let LETTERS = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
   private static var number = 0
   private static var second_letter_index = 0
   private static var first_letter_index = 0

@@ -1,7 +1,7 @@
 class SumOfMultiples {
   class func toLimit(limit:Int, inMultiples:[Int] = [3,5]) -> Int{
     var multiples = Set<Int>()
-    var factors = inMultiples.filter {$0 != 0}
+    let factors = inMultiples.filter {$0 != 0}
     
       for factor in factors {
         multiples = multiples.union(multiplesOf(factor, limit: limit))
