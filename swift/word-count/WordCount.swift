@@ -15,21 +15,21 @@ class WordCount {
     return runningCount
   }
     
-  private func getWordList(input:String) -> [String] {
+  fileprivate func getWordList(_ input:String) -> [String] {
     var words = seperateIntoWords(input)
-    words = words.map({$0.lowercaseString})
+    words = words.map({$0.lowercased()})
     words = words.map(stripPunctuation)
     words = words.filter({$0 != ""})
     return words
   }
 
-  private func seperateIntoWords(input:String) -> [String] {
-    let whitespaceChars = NSCharacterSet.whitespaceAndNewlineCharacterSet()
-    return input.componentsSeparatedByCharactersInSet(whitespaceChars)
+  fileprivate func seperateIntoWords(_ input:String) -> [String] {
+    let whitespaceChars = CharacterSet.whitespacesAndNewlines
+    return input.components(separatedBy: whitespaceChars)
   }
 
-  private func stripPunctuation(word:String) -> String {
-    let unwantedChars = NSCharacterSet.alphanumericCharacterSet().invertedSet
-    return word.stringByTrimmingCharactersInSet(unwantedChars)
+  fileprivate func stripPunctuation(_ word:String) -> String {
+    let unwantedChars = CharacterSet.alphanumerics.inverted
+    return word.trimmingCharacters(in: unwantedChars)
   }
 }

@@ -14,7 +14,7 @@ class Allergies {
     self.score = score
   }
 
-  func hasAllergy(allergy:UInt) -> Bool{
+  func hasAllergy(_ allergy:UInt) -> Bool{
     return (score & allergy) != 0
   }
 }

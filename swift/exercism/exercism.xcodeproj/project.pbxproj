@@ -29,13 +29,11 @@
 		6D3F22BB1B4314CA0083C5A3 /* EtlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22BA1B4314CA0083C5A3 /* EtlTest.swift */; };
 		6D3F22C01B4315760083C5A3 /* Etl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22BF1B4315760083C5A3 /* Etl.swift */; };
 		6D3F22C11B4315760083C5A3 /* Etl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22BF1B4315760083C5A3 /* Etl.swift */; };
-		6D3F22C41B439C140083C5A3 /* AnagramTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22C21B439C140083C5A3 /* AnagramTest.swift */; };
 		6D3F22C91B439DC70083C5A3 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22C81B439DC70083C5A3 /* Anagram.swift */; };
 		6D3F22CA1B439DC70083C5A3 /* Anagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3F22C81B439DC70083C5A3 /* Anagram.swift */; };
 		6D527FA71B4F1222007139A9 /* PhoneNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FA61B4F1222007139A9 /* PhoneNumberTest.swift */; };
 		6D527FA91B4F12A6007139A9 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FA81B4F12A6007139A9 /* PhoneNumber.swift */; };
 		6D527FAA1B4F12A6007139A9 /* PhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FA81B4F12A6007139A9 /* PhoneNumber.swift */; };
-		6D527FAD1B504AB8007139A9 /* GradeSchoolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */; };
 		6D527FAF1B504B01007139A9 /* GradeSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAE1B504B01007139A9 /* GradeSchool.swift */; };
 		6D527FB01B504B01007139A9 /* GradeSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FAE1B504B01007139A9 /* GradeSchool.swift */; };
 		6D527FB21B50A163007139A9 /* RobotNameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D527FB11B50A163007139A9 /* RobotNameTest.swift */; };
@@ -98,11 +96,9 @@
 		6D3F22B81B4312F80083C5A3 /* WordCountTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WordCountTest.swift; path = "../../word-count/WordCountTest.swift"; sourceTree = "<group>"; };
 		6D3F22BA1B4314CA0083C5A3 /* EtlTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EtlTest.swift; path = ../../etl/EtlTest.swift; sourceTree = "<group>"; };
 		6D3F22BF1B4315760083C5A3 /* Etl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Etl.swift; path = ../../etl/Etl.swift; sourceTree = "<group>"; };
-		6D3F22C21B439C140083C5A3 /* AnagramTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnagramTest.swift; path = ../../anagram/AnagramTest.swift; sourceTree = "<group>"; };
 		6D3F22C81B439DC70083C5A3 /* Anagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Anagram.swift; path = ../../anagram/Anagram.swift; sourceTree = "<group>"; };
 		6D527FA61B4F1222007139A9 /* PhoneNumberTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneNumberTest.swift; path = "../../phone-number/PhoneNumberTest.swift"; sourceTree = "<group>"; };
 		6D527FA81B4F12A6007139A9 /* PhoneNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhoneNumber.swift; path = "../../phone-number/PhoneNumber.swift"; sourceTree = "<group>"; };
-		6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradeSchoolTest.swift; path = "../../grade-school/GradeSchoolTest.swift"; sourceTree = "<group>"; };
 		6D527FAE1B504B01007139A9 /* GradeSchool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradeSchool.swift; path = "../../grade-school/GradeSchool.swift"; sourceTree = "<group>"; };
 		6D527FB11B50A163007139A9 /* RobotNameTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotNameTest.swift; path = "../../robot-name/RobotNameTest.swift"; sourceTree = "<group>"; };
 		6D527FB31B50A257007139A9 /* RobotName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RobotName.swift; path = "../../robot-name/RobotName.swift"; sourceTree = "<group>"; };
@@ -210,10 +206,8 @@
 				6D527FBC1B54535E007139A9 /* AllergiesTest.swift */,
 				6D527FB61B515281007139A9 /* PerfectNumbersTest.swift */,
 				6D527FB11B50A163007139A9 /* RobotNameTest.swift */,
-				6D527FAC1B504AB8007139A9 /* GradeSchoolTest.swift */,
 				6D527FA61B4F1222007139A9 /* PhoneNumberTest.swift */,
 				6D30E16F1B447632000E5523 /* NucleotideCountTest.swift */,
-				6D3F22C21B439C140083C5A3 /* AnagramTest.swift */,
 				6D3F22BA1B4314CA0083C5A3 /* EtlTest.swift */,
 				6D3F22B81B4312F80083C5A3 /* WordCountTest.swift */,
 				6D3F22B21B43129C0083C5A3 /* HammingTest.swift */,
@@ -278,14 +272,16 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Damien Burke";
 				TargetAttributes = {
 					6D2F9EDF1B430E6300B90B4C = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0830;
 					};
 					6D2F9EF41B430E6300B90B4C = {
 						CreatedOnToolsVersion = 6.3.2;
+						LastSwiftMigration = 0830;
 						TestTargetID = 6D2F9EDF1B430E6300B90B4C;
 					};
 				};
@@ -373,7 +369,6 @@
 				6DE3CFE71B67005C006F4464 /* SumOfMultiples.swift in Sources */,
 				6D87DC5E1B69EA5C00FE8ED0 /* Gigasecond.swift in Sources */,
 				6D3F22B91B4312F80083C5A3 /* WordCountTest.swift in Sources */,
-				6D3F22C41B439C140083C5A3 /* AnagramTest.swift in Sources */,
 				6D3F22B71B4312F10083C5A3 /* WordCount.swift in Sources */,
 				6D3F22C11B4315760083C5A3 /* Etl.swift in Sources */,
 				6D2F9F0A1B43101A00B90B4C /* BobTest.swift in Sources */,
@@ -382,7 +377,6 @@
 				6D3F22BB1B4314CA0083C5A3 /* EtlTest.swift in Sources */,
 				6D527FC41B545AAC007139A9 /* AccumulateTest.swift in Sources */,
 				6D3F22AE1B4312430083C5A3 /* Leap.swift in Sources */,
-				6D527FAD1B504AB8007139A9 /* GradeSchoolTest.swift in Sources */,
 				6D527FA71B4F1222007139A9 /* PhoneNumberTest.swift in Sources */,
 				6D30E1701B447632000E5523 /* NucleotideCountTest.swift in Sources */,
 				6D527FBB1B5152A6007139A9 /* PerfectNumbers.swift in Sources */,
@@ -442,8 +436,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -487,8 +483,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -507,6 +505,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -519,6 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.damienburke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -530,6 +530,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.damienburke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -549,6 +550,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.damienburke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exercism.app/exercism";
 			};
 			name = Debug;
@@ -565,6 +567,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.damienburke.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/exercism.app/exercism";
 			};
 			name = Release;

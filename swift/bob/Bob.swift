@@ -1,7 +1,7 @@
 import Foundation
 
 class Bob {
-  class func hey(input:String) -> String {
+  class func hey(_ input:String) -> String {
     if (isShouting(input)) {
       return "Woah, chill out!"
 
@@ -16,19 +16,19 @@ class Bob {
     }
   }
 
-  private class func isShouting(input:String) -> Bool {
-    let hasLowercaseLetters = (input != input.uppercaseString)
-    let hasUppercaseLetters = (input != input.lowercaseString)
+  fileprivate class func isShouting(_ input:String) -> Bool {
+    let hasLowercaseLetters = (input != input.uppercased())
+    let hasUppercaseLetters = (input != input.lowercased())
     return hasUppercaseLetters && !hasLowercaseLetters
   }
 
-  private class func isSilence(input:String) -> Bool {
-    let whitespaceCharacters = NSCharacterSet.whitespaceCharacterSet()
-    let inputWithoutWhitespace = input.stringByTrimmingCharactersInSet(whitespaceCharacters)
+  fileprivate class func isSilence(_ input:String) -> Bool {
+    let whitespaceCharacters = CharacterSet.whitespaces
+    let inputWithoutWhitespace = input.trimmingCharacters(in: whitespaceCharacters)
     return inputWithoutWhitespace == ""
   }
 
-  private class func isAskingQuestion(input:String) -> Bool {
+  fileprivate class func isAskingQuestion(_ input:String) -> Bool {
     return input.hasSuffix("?")
   }
 }

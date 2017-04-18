@@ -1,5 +1,5 @@
 class Hamming {
-  class func compute(initial:String, against:String) -> Int? {
+  class func compute(_ initial:String, against:String) -> Int? {
     if initial.characters.count != against.characters.count {
       return nil
     }
@@ -8,7 +8,7 @@ class Hamming {
 
     for index in initial.characters.indices {
       if initial[index] != against[index] {
-        hammingDistance++
+        hammingDistance += 1
       }
     }
     return hammingDistance

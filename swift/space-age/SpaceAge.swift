@@ -39,11 +39,11 @@ class SpaceAge {
     return roundToTwoDecimalPlaces(earthAge / 164.79132)
   }
   
-  private var earthAge:Double {
+  fileprivate var earthAge:Double {
     return Double(seconds) / 31557600.0
   }
   
-  private func roundToTwoDecimalPlaces(number:Double) -> Double {
+  fileprivate func roundToTwoDecimalPlaces(_ number:Double) -> Double {
     return round(number * 100) / 100
   }
 }

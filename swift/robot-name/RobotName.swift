@@ -9,25 +9,25 @@ class Robot {
     self.name = Robot.generateName()
   }
 
-  private class func generateName() -> String {
+  fileprivate class func generateName() -> String {
     incrementName()
     return letters() + digits()
   }
 
-  private static let LETTERS = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
-  private static var number = 0
-  private static var second_letter_index = 0
-  private static var first_letter_index = 0
+  fileprivate static let LETTERS = Array("ABCDEFGHIJKLMNOPQRSTUVWXYZ".characters)
+  fileprivate static var number = 0
+  fileprivate static var second_letter_index = 0
+  fileprivate static var first_letter_index = 0
 
-  private class func letters() -> String {
+  fileprivate class func letters() -> String {
     return String([LETTERS[first_letter_index], LETTERS[second_letter_index]])
   }
 
-  private class func digits() -> String {
+  fileprivate class func digits() -> String {
     return String(format:"%03d", number)
   }
 
-  private class func incrementName() {
+  fileprivate class func incrementName() {
     number += 1
     if number >= 1000 {
       number = 0

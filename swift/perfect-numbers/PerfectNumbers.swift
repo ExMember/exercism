@@ -4,18 +4,18 @@ class NumberClassifier {
   init(number:Int) {
     var factors = NumberClassifier.factorsOf(number)
     factors.remove(number)
-    let sum = Array(factors).reduce(0, combine:+)
+    let sum = Array(factors).reduce(0, +)
 
     if sum < number {
-      classification = .Deficient
+      classification = .deficient
     } else if sum > number {
-      classification = .Abundant
+      classification = .abundant
     } else {
-      classification = .Perfect
+      classification = .perfect
     }
   }
 
-  private class func factorsOf(number:Int) -> Set<Int> {
+  fileprivate class func factorsOf(_ number:Int) -> Set<Int> {
     var factors = Set<Int>()
     for possibleFactor in 1...number {
       if (number % possibleFactor) == 0 {
@@ -27,7 +27,7 @@ class NumberClassifier {
 }
 
 enum NumberClassification {
-  case Deficient
-  case Perfect
-  case Abundant
+  case deficient
+  case perfect
+  case abundant
 }

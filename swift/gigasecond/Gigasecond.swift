@@ -1,18 +1,18 @@
 import Foundation
 
 class Gigasecond {
-  class func from(dateString:String) -> NSDate {
+  class func from(_ dateString:String) -> Date {
     let fromDate = dateFromString(dateString)
-    return fromDate.dateByAddingTimeInterval(GIGASECOND)
+    return fromDate.addingTimeInterval(GIGASECOND)
   }
   
-  private static let GIGASECOND:NSTimeInterval = pow(10, 9)
+  fileprivate static let GIGASECOND:TimeInterval = pow(10, 9)
   
-  private class func dateFromString(dateString:String) -> NSDate {
-    let dateFormatter = NSDateFormatter()
-    dateFormatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+  fileprivate class func dateFromString(_ dateString:String) -> Date {
+    let dateFormatter = DateFormatter()
+    dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
     dateFormatter.dateFormat = "yyy-MM-dd'T'HH:mm:ss"
-    let date = dateFormatter.dateFromString(dateString)
-    return date ?? NSDate.distantFuture() 
+    let date = dateFormatter.date(from: dateString)
+    return date ?? Date.distantFuture 
   }
 }

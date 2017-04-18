@@ -2,7 +2,7 @@ class Year {
 
   let isLeapYear:Bool
 
-  private class func isLeapYear(year:Int) -> Bool {
+  fileprivate class func isLeapYear(_ year:Int) -> Bool {
     if(!isDivisibleBy4(year)) {
       return false
     } else if(isDivisibleBy100(year) && !isDivisibleBy400(year)) {
@@ -12,19 +12,19 @@ class Year {
     }
   }
 
-  private class func isDivisibleBy4(number:Int) -> Bool {
+  fileprivate class func isDivisibleBy4(_ number:Int) -> Bool {
     return isDivisibleBy(number, divisor:4)
   }
 
-  private class func isDivisibleBy100(number:Int) -> Bool {
+  fileprivate class func isDivisibleBy100(_ number:Int) -> Bool {
     return isDivisibleBy(number, divisor:100)
   }
 
-  private class func isDivisibleBy400(number:Int) -> Bool {
+  fileprivate class func isDivisibleBy400(_ number:Int) -> Bool {
     return isDivisibleBy(number, divisor:400)
   }
 
-  private class func isDivisibleBy(number:Int, divisor:Int) -> Bool {
+  fileprivate class func isDivisibleBy(_ number:Int, divisor:Int) -> Bool {
     return (number % divisor) == 0
   }
 

@@ -4,15 +4,15 @@ class Anagram {
   
   init(word: String) {
     self.word = word
-    self.sorted_chars = String(word.lowercaseString.characters.sort())
+    self.sorted_chars = String(word.lowercased().characters.sorted())
   }
   
-  func match(candidates:[String]) -> [String] {
+  func match(_ candidates:[String]) -> [String] {
     return candidates.filter(isAnagram)
   }
   
-  private func isAnagram(candidate:String) -> Bool {
-    if candidate.lowercaseString == word.lowercaseString { return false }
-    return sorted_chars == String(candidate.lowercaseString.characters.sort())
+  fileprivate func isAnagram(_ candidate:String) -> Bool {
+    if candidate.lowercased() == word.lowercased() { return false }
+    return sorted_chars == String(candidate.lowercased().characters.sorted())
   }
 }

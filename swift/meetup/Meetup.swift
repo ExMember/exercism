@@ -4,7 +4,7 @@ class Meetup {
   init(year:Int, month:Int){
   }
   
-  func day(dayOfWeek:Int, which:String) -> NSDate {
-    return NSDate()
+  func day(_ dayOfWeek:Int, which:String) -> Date {
+    return Date()
   }
 }

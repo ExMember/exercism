@@ -7,13 +7,13 @@ class DNA {
     if !valid { return nil }
   }
   
-  private func countBases(strand:String) {
+  fileprivate func countBases(_ strand:String) {
     for base in strand.characters {
       addBase(base)
     }
   }
   
-  private func addBase(base:String) {
+  fileprivate func addBase(_ base:String) {
     if let count = baseCounts[base] {
       baseCounts[base] = count + 1
     } else {
@@ -21,11 +21,11 @@ class DNA {
     }
   }
   
-  private func addBase(base:Character) {
+  fileprivate func addBase(_ base:Character) {
     addBase(String(base))
   }
   
-  func count(base:String) -> Int {
+  func count(_ base:String) -> Int {
     return baseCounts[base] ?? 0
   }
   

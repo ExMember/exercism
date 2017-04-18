@@ -2,10 +2,10 @@ import XCTest
 
 class  MeetupTest: XCTestCase {
     
-    func newDate(input:String) -> NSDate {
-        let dateFormatter = NSDateFormatter()
+    func newDate(_ input:String) -> Date {
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        return dateFormatter.dateFromString(input) ?? NSDate.distantFuture() 
+        return dateFormatter.date(from: input) ?? Date.distantFuture 
     }
     
     

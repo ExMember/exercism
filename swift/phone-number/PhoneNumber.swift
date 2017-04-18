@@ -10,7 +10,7 @@ class PhoneNumber {
     normalizedNumber = number
   }
 
-  private class func filterNonDigits(string:String) -> String {
+  fileprivate class func filterNonDigits(_ string:String) -> String {
     let digits = Set("0123456789".characters)
     var filteredString = ""
     for character in string.characters {
@@ -21,15 +21,16 @@ class PhoneNumber {
     return filteredString
   }
 
-  private class func fixLongNumber(var number:String) -> String {
+  private class func fixLongNumber(_ number:String) -> String {
+    var number = number
     if number.characters.count == 11 {
-      let leadingDigit = number.removeAtIndex(number.startIndex)
+      let leadingDigit = number.remove(at: number.startIndex)
       if leadingDigit != "1" { number = INVALID_NUMBER }
     }
     return number
   }
 
-  private class func fixShortNumber(number:String) -> String {
+  fileprivate class func fixShortNumber(_ number:String) -> String {
     if number.characters.count < 10 {
       return INVALID_NUMBER
     } else {
@@ -43,20 +44,20 @@ class PhoneNumber {
 
   func areaCode() -> String {
     let firstIndex = normalizedNumber.startIndex
-    let lastIndex = firstIndex.advancedBy(2)
+    let lastIndex = normalizedNumber.index(firstIndex, offsetBy: 2)
     return normalizedNumber[firstIndex...lastIndex]
   }
 
-  private func exchange() -> String {
-    let firstIndex = normalizedNumber.startIndex.advancedBy(3)
-    let lastIndex = firstIndex.advancedBy(2)
+  fileprivate func exchange() -> String {
+    let firstIndex = normalizedNumber.index(normalizedNumber.startIndex, offsetBy: 3)
+    let lastIndex = normalizedNumber.index(firstIndex, offsetBy: 2)
     return normalizedNumber[firstIndex...lastIndex]
   }
 
-  private func local() -> String {
-    let firstIndex = normalizedNumber.startIndex.advancedBy(6)
+  fileprivate func local() -> String {
+    let firstIndex = normalizedNumber.index(normalizedNumber.startIndex, offsetBy: 6)
     let lastIndex = normalizedNumber.endIndex
-    return normalizedNumber[firstIndex...lastIndex.predecessor()]
+    return normalizedNumber[firstIndex...normalizedNumber.index(before: lastIndex)]
   }
 
   func description() -> String {

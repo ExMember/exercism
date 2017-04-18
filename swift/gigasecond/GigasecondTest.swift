@@ -3,11 +3,11 @@ import XCTest
 
 class GigasecondTest: XCTestCase {
     
-    func newDateWithTime(input:String) -> NSDate {
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.timeZone = NSTimeZone(forSecondsFromGMT: 0)
+    func newDateWithTime(_ input:String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = TimeZone(secondsFromGMT: 0)
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
-        return dateFormatter.dateFromString(input) ?? NSDate.distantFuture() 
+        return dateFormatter.date(from: input) ?? Date.distantFuture 
     }
 
     
@@ -27,7 +27,7 @@ class GigasecondTest: XCTestCase {
     }
     
     func testTimeWithSeconds () {
-        let gs = Gigasecond.from("1959-7-20T00:00:00").dateByAddingTimeInterval(-1)
+        let gs = Gigasecond.from("1959-7-20T00:00:00").addingTimeInterval(-1)
         XCTAssertEqual(newDateWithTime("1991-3-28T01:46:39"), gs)
     }
     
