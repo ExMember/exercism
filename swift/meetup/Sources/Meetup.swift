@@ -33,8 +33,12 @@ class Meetup {
   }
 
   private func teenth(dayOfWeek:Int) -> Date? {
-    let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
-    return calendar.nextDate(after: twelfthOfMonth!, matching: components, matchingPolicy: .nextTime)
+    if let twelfthOfMonth = twelfthOfMonth {
+      let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
+      return calendar.nextDate(after: twelfthOfMonth, matching: components, matchingPolicy: .nextTime)
+    } else {
+    return nil
+    }
   }
 
   private func nth(ordinal:Int, dayOfWeek:Int) -> Date? {
@@ -42,8 +46,12 @@ class Meetup {
   }
 
   private func last(dayOfWeek:Int) -> Date? {
-    let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
-    return calendar.nextDate(after: firstOfNextMonth!, matching: components, matchingPolicy: .nextTime, direction: .backward)
+    if let firstOfNextMonth = firstOfNextMonth {
+      let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
+      return calendar.nextDate(after: firstOfNextMonth, matching: components, matchingPolicy: .nextTime, direction: .backward)
+    } else {
+      return nil
+    }
   }
 
   private var firstOfMonth:Date? {
