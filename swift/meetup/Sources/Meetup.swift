@@ -1,18 +1,17 @@
 import Foundation
 
 class Meetup {
-  let year:Int
-  let month:Int
+  let firstOfMonth:Date
+  let calendar = NSCalendar(identifier: NSCalendar.Identifier.gregorian)!
 
   init(year:Int, month:Int){
-    self.year = year
-    self.month = month
+    let components = DateComponents.init(calendar: Calendar.current, year: year, month: month, day: 1)
+    firstOfMonth = components.date!
   }
   
   func day(_ dayOfWeek:Int, which:String) -> MeetupDate {
-    let components = DateComponents.init(calendar: Calendar.current, year: 2013, month: 5, day: 13)
-    let date = components.date!
-    return MeetupDate.init(date: date)
+    let date = calendar.nextDate(after: firstOfMonth, matching: .weekday, value: dayOfWeek, options: [.matchNextTime])
+    return MeetupDate.init(date: date!)
   }
 
   class MeetupDate {
