@@ -32,31 +32,31 @@ class Meetup {
     return MeetupDate.init(date: date)
   }
 
-  func teenth(dayOfWeek:Int) -> Date? {
+  private func teenth(dayOfWeek:Int) -> Date? {
     let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
     return calendar.nextDate(after: twelfthOfMonth!, matching: components, matchingPolicy: .nextTime)
   }
 
-  func nth(ordinal:Int, dayOfWeek:Int) -> Date? {
+  private func nth(ordinal:Int, dayOfWeek:Int) -> Date? {
     return DateComponents(calendar: calendar, year: year, month: month, weekday: dayOfWeek, weekdayOrdinal: ordinal).date
   }
 
-  func last(dayOfWeek:Int) -> Date? {
+  private func last(dayOfWeek:Int) -> Date? {
     let components = DateComponents(calendar: calendar, weekday: dayOfWeek)
     return calendar.nextDate(after: firstOfNextMonth!, matching: components, matchingPolicy: .nextTime, direction: .backward)
   }
 
-  var firstOfMonth:Date? {
+  private var firstOfMonth:Date? {
     let components = DateComponents.init(calendar: calendar, year: year, month: month, day: 1)
     return components.date
   }
 
-  var twelfthOfMonth:Date? {
+  private var twelfthOfMonth:Date? {
     let components = DateComponents.init(calendar: calendar, year: year, month: month, day: 12)
     return components.date
   }
 
-  var firstOfNextMonth:Date? {
+  private var firstOfNextMonth:Date? {
     let components = DateComponents.init(calendar: calendar, year: year, month: month+1, day: 1)
     return components.date
   }
@@ -65,7 +65,7 @@ class Meetup {
     let date:Date?
     let formatter = ISO8601DateFormatter.init();
 
-    init(date:Date?){
+    fileprivate init(date:Date?){
       self.date = date
       formatter.formatOptions = [.withYear, .withMonth, .withDay, .withDashSeparatorInDate]
     }
