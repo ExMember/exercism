@@ -47,17 +47,17 @@ class Meetup {
   }
 
   var firstOfMonth:Date? {
-    let components = DateComponents.init(calendar: Calendar.current, year: year, month: month, day: 1)
+    let components = DateComponents.init(calendar: calendar, year: year, month: month, day: 1)
     return components.date
   }
 
   var twelfthOfMonth:Date? {
-    let components = DateComponents.init(calendar: Calendar.current, year: year, month: month, day: 12)
+    let components = DateComponents.init(calendar: calendar, year: year, month: month, day: 12)
     return components.date
   }
 
   var firstOfNextMonth:Date? {
-    let components = DateComponents.init(calendar: Calendar.current, year: year, month: month+1, day: 1)
+    let components = DateComponents.init(calendar: calendar, year: year, month: month+1, day: 1)
     return components.date
   }
 
