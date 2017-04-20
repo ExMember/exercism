@@ -71,7 +71,11 @@ class Meetup {
     }
 
     var description: String {
-      return formatter.string(from: date!)
+      if let date = date {
+        return formatter.string(from: date)
+      } else {
+        return ""
+      }
     }
   }
 }
