@@ -1,7 +1,8 @@
+# -*- coding: UTF-8 -*-
 #
 # Skeleton file for the Python "Hello World" exercise.
 #
 
 
-def hello(name=''):
-    return
+def hello(name='World'):
+    return "Hello, {}!".format(name)

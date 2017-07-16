@@ -4,3 +4,5 @@ xcuserdata/
 xcshareddata/
 app/
 build/
+__pycache__/
+*.pyc
