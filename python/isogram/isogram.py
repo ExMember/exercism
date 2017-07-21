@@ -1,8 +1,8 @@
 def is_isogram(word):
     letters = set()
-    for char in list(word):
+    for char in list(word.lower()):
         if char.isalpha():
-            if char.lower() in letters:
+            if char in letters:
                 return False
-            letters.add(char.lower())
+            letters.add(char)
     return True
