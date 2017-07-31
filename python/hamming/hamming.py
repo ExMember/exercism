@@ -1,4 +1,3 @@
 def distance(a, b):
-    if len(a) != len(b):
-        raise ValueError
-    return len([c for c in zip(a, b) if c[0] != c[1]])
+    if len(a) != len(b): raise ValueError("Strings must be equal length")
+    return len([1 for i, j in zip(a, b) if i != j])
